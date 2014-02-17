@@ -1,0 +1,6 @@
+README
+======
+
+Writing slides in pandoc markdown is easy!
+
+`pandoc_slides.mkd` is the source file.
