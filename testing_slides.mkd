@@ -1,0 +1,78 @@
+% Making slides with pandoc markdown is easy!
+% Vincent Tam
+% 2014-2-17
+
+# Slide 1
+
+- Point 1
+- Point 1
+- Point 1
+
+# Slide 2
+
+1. Point 1
+1. Point 1
+1. Point 1
+
+# Slide 3
+
+Somebody says something famous.
+
+> Some quotations.
+
+# Slide 4
+
+##HTML code
+
+```html
+<dl>
+	<dt>A term to be defined</dt>
+	<dd>- Description copied from w3schools.com</dd>
+	<dt>Another technical term</dt>
+	<dd>- Describe it here.</dd>
+</dl>
+```
+
+##MATLAB code
+
+```matlab
+for i=1:2:101;
+	i = i + 1;
+end
+if i > 100
+	disp('i is larger than 100')
+elseif i < 100
+	disp('i is smaller than 100')
+else disp('i may not be 100')
+end
+```
+
+# Slide 5
+
+Here's some inline math. I copied the question from my MATH 2070B homework 4 question 3.[^1]
+
+If $R$ is a *non-commutative* ring, for $a,b,c \in R$ such that $ab = bc = 1$, we have $a = c$ because $a(bc) = (ab)c$.
+
+[^1]: Footnote one.
+
+# Slide 6
+
+We can use pandoc to convert it to different formats.
+
+- LaTeX documents
+
+		pandoc testing_slides.mkd -o foo_latex.pdf
+
+- Beamer slides
+
+	[Color theme gallery](http://deic.uab.es/~iblanes/beamer_gallery/index_by_theme.html)
+
+		pandoc -t beamer testing_slides.mkd -V theme:Warsaw -o foo_beamer.pdf
+
+- Reveal.js slides
+
+		pandoc -sit revealjs --mathjax testing_slides.mkd -o foo_revealjs.html --variable revealjs-url=http://lab.hakim.se/reveal-js
+
+- Slidy slides
+
+		pandoc -sit slidy --webtex testing_slides.mkd -o foo_slidy.html
