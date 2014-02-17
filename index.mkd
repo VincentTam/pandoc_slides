@@ -1,5 +1,5 @@
-Project page for pandoc_slides
-==============================
+Project page for [pandoc_slides](https://github.com/vincenttam/pandoc_slides/)
+====
 
 Writing slides with markdown is *easy*.
 
