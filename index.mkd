@@ -13,7 +13,12 @@ Sample output
 
 Here are the demo files.
 
+<<<<<<< HEAD
 1. Handout: [foo_latex.pdf](foo_latex.pdf)
 2. Beamer slides: [foo_beamer.pdf](foo_beamer.pdf)
 3. Reveal.js slides: [foo_revealjs.pdf](foo_revealjs.pdf)
 4. Slidy slides: [foo_slidy.pdf](foo_slidy.pdf)
+=======
+1. [foo_beamer.pdf](foo_beamer.pdf)
+2. [foo_latex.pdf](foo_latex.pdf)
+>>>>>>> 5fdb5855a7f36d0fdee5c0976db6612d80f6a217
