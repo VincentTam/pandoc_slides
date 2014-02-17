@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="Vincent Tam" />
+  <title>Making slides with pandoc markdown is easy!</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; }
+code > span.dt { color: #902000; }
+code > span.dv { color: #40a070; }
+code > span.bn { color: #40a070; }
+code > span.fl { color: #40a070; }
+code > span.ch { color: #4070a0; }
+code > span.st { color: #4070a0; }
+code > span.co { color: #60a0b0; font-style: italic; }
+code > span.ot { color: #007020; }
+code > span.al { color: #ff0000; font-weight: bold; }
+code > span.fu { color: #06287e; }
+code > span.er { color: #ff0000; font-weight: bold; }
+  </style>
+  <link rel="stylesheet" type="text/css" media="screen, projection, print"
+    href="http://www.w3.org/Talks/Tools/Slidy2/styles/slidy.css" />
+  <script src="http://www.w3.org/Talks/Tools/Slidy2/scripts/slidy.js"
+    charset="utf-8" type="text/javascript"></script>
+</head>
+<body>
+<div class="slide titlepage">
+  <h1 class="title">Making slides with pandoc markdown is easy!</h1>
+  <p class="author">
+Vincent Tam
+  </p>
+  <p class="date">2014-2-17</p>
+</div>
+<div id="slide-1" class="slide section level1">
+<h1>Slide 1</h1>
+<ul class="incremental">
+<li>Point 1</li>
+<li>Point 1</li>
+<li>Point 1</li>
+</ul>
+</div>
+<div id="slide-2" class="slide section level1">
+<h1>Slide 2</h1>
+<ol class="incremental" style="list-style-type: decimal">
+<li>Point 1</li>
+<li>Point 1</li>
+<li>Point 1</li>
+</ol>
+</div>
+<div id="slide-3" class="slide section level1">
+<h1>Slide 3</h1>
+<p>Somebody says something famous.</p>
+<blockquote>
+<p>Some quotations.</p>
+</blockquote>
+</div>
+<div id="slide-4" class="slide section level1">
+<h1>Slide 4</h1>
+<h2 id="html-code">HTML code</h2>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;dl&gt;</span>
+    <span class="kw">&lt;dt&gt;</span>A term to be defined<span class="kw">&lt;/dt&gt;</span>
+    <span class="kw">&lt;dd&gt;</span>- Description copied from w3schools.com<span class="kw">&lt;/dd&gt;</span>
+    <span class="kw">&lt;dt&gt;</span>Another technical term<span class="kw">&lt;/dt&gt;</span>
+    <span class="kw">&lt;dd&gt;</span>- Describe it here.<span class="kw">&lt;/dd&gt;</span>
+<span class="kw">&lt;/dl&gt;</span></code></pre>
+<h2 id="matlab-code">MATLAB code</h2>
+<pre class="sourceCode matlab"><code class="sourceCode matlab">for i=<span class="fl">1</span>:<span class="fl">2</span>:<span class="fl">101</span>;
+    i = i + <span class="fl">1</span>;
+end
+if i &gt; <span class="fl">100</span>
+    disp(<span class="st">&#39;i is larger than 100&#39;</span>)
+elseif i &lt; <span class="fl">100</span>
+    disp(<span class="st">&#39;i is smaller than 100&#39;</span>)
+else disp(<span class="st">&#39;i may not be 100&#39;</span>)
+end</code></pre>
+</div>
+<div id="slide-5" class="slide section level1">
+<h1>Slide 5</h1>
+<p>Here's some inline math. I copied the question from my MATH 2070B homework 4 question 3.<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a></p>
+<p>If <img style="vertical-align:middle" src="http://chart.apis.google.com/chart?cht=tx&amp;chl=R" alt="R" title="R" /> is a <em>non-commutative</em> ring, for <img style="vertical-align:middle" src="http://chart.apis.google.com/chart?cht=tx&amp;chl=a%2Cb%2Cc%20%5Cin%20R" alt="a,b,c \in R" title="a,b,c \in R" /> such that <img style="vertical-align:middle" src="http://chart.apis.google.com/chart?cht=tx&amp;chl=ab%20%3D%20bc%20%3D%201" alt="ab = bc = 1" title="ab = bc = 1" />, we have <img style="vertical-align:middle" src="http://chart.apis.google.com/chart?cht=tx&amp;chl=a%20%3D%20c" alt="a = c" title="a = c" /> because <img style="vertical-align:middle" src="http://chart.apis.google.com/chart?cht=tx&amp;chl=a%28bc%29%20%3D%20%28ab%29c" alt="a(bc) = (ab)c" title="a(bc) = (ab)c" />.</p>
+</div>
+<div id="slide-6" class="slide section level1">
+<h1>Slide 6</h1>
+<p>We can use pandoc to convert it to different formats.</p>
+<ul class="incremental">
+<li><p>LaTeX documents</p>
+<pre><code>pandoc testing_slides.mkd -o foo_latex.pdf</code></pre></li>
+<li><p>Beamer slides</p>
+<p><a href="http://deic.uab.es/~iblanes/beamer_gallery/index_by_theme.html">Color theme gallery</a></p>
+<pre><code>pandoc -t beamer testing_slides.mkd -V theme:Warsaw -o foo_beamer.pdf</code></pre></li>
+<li><p>Reveal.js slides</p>
+<pre><code>pandoc -sit revealjs --mathjax testing_slides.mkd -o foo_revealjs.html --variable revealjs-url=http://lab.hakim.se/reveal-js</code></pre></li>
+<li><p>Slidy slides</p>
+<pre><code>pandoc -sit slidy --webtex testing_slides.mkd -o foo_slidy.html</code></pre></li>
+</ul>
+</div>
+<div class="footnotes slide">
+<hr />
+<ol>
+<li id="fn1"><p>Footnote one.<a href="#fnref1">↩</a></p></li>
+</ol>
+</div>
+</body>
+</html>
