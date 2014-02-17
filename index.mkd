@@ -15,5 +15,5 @@ Here are the demo files.
 
 1. Handout: [foo_latex.pdf](foo_latex.pdf)
 2. Beamer slides: [foo_beamer.pdf](foo_beamer.pdf)
-3. Reveal.js slides: [foo_revealjs.pdf](foo_revealjs.pdf)
-4. Slidy slides: [foo_slidy.pdf](foo_slidy.pdf)
+3. Reveal.js slides: [foo_revealjs.html](foo_revealjs.html)
+4. Slidy slides: [foo_slidy.html](foo_slidy.html)
