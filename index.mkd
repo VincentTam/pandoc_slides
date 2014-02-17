@@ -1,0 +1,19 @@
+Project page for pandoc_slides
+==============================
+
+Writing slides with markdown is *easy*.
+
+Source
+------
+
+Refer to <https://raw2.github.com/VincentTam/pandoc_slides/master/testing_slides.mkd>
+
+Sample output
+-------------
+
+Here are the demo files.
+
+1. Handout: [foo_latex.pdf](foo_latex.pdf)
+2. Beamer slides: [foo_beamer.pdf](foo_beamer.pdf)
+3. Reveal.js slides: [foo_revealjs.pdf](foo_revealjs.pdf)
+4. Slidy slides: [foo_slidy.pdf](foo_slidy.pdf)
