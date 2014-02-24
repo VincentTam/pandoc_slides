@@ -17,3 +17,10 @@ Here are the demo files.
 2. Beamer slides: [foo_beamer.pdf](foo_beamer.pdf)
 3. Reveal.js slides: [foo_revealjs.html](foo_revealjs.html)
 4. Slidy slides: [foo_slidy.html](foo_slidy.html)
+
+My other slides
+---------------
+
+I'll put my other slides here.
+
+1. [Matlab Habits](matlab_habits.pdf)
