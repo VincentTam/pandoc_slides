@@ -125,7 +125,7 @@ compilation              yes                  no
 
 development speed        faster               slower
 
-execution speed          faster               slower
+execution speed          slower               faster
                                                                       
 ----------------------------------------------------------------------
 
