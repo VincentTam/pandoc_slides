@@ -6,7 +6,7 @@ Writing slides with markdown is *easy*.
 Source
 ------
 
-Refer to <https://raw2.github.com/VincentTam/pandoc_slides/master/testing_slides.mkd>
+Refer to <https://raw.github.com/VincentTam/pandoc_slides/master/testing_slides.mkd>
 
 Sample output
 -------------
