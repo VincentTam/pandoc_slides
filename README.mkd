@@ -1,6 +1,6 @@
 README
 ======
 
-Writing slides in pandoc markdown is easy!
+Writing slides in pandoc markdown is very easy!
 
 `pandoc_slides.mkd` is the source file. View the [project homepage](http://vincenttam.github.io/pandoc_slides/) for the sample outputs.
